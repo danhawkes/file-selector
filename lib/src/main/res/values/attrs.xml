@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="actionBarAddIcon" format="reference" />
+    <attr name="actionBarAcceptIcon" format="reference" />
+    <attr name="thumbnailIconStyle" format="reference" />
+    <attr name="showAsDialog" format="reference|boolean" />
+    <attr name="colorDialogBackground" format="reference|color" />
+
+    <declare-styleable name="ThumbnailIcon">
+        <attr name="apk" format="reference" />
+        <attr name="audio" format="reference" />
+        <attr name="certificate" format="reference" />
+        <attr name="code" format="reference" />
+        <attr name="compressed" format="reference" />
+        <attr name="contact" format="reference" />
+        <attr name="event" format="reference" />
+        <attr name="font" format="reference" />
+        <attr name="generic" format="reference" />
+        <attr name="image" format="reference" />
+        <attr name="pdf" format="reference" />
+        <attr name="presentation" format="reference" />
+        <attr name="spreadsheet" format="reference" />
+        <attr name="text" format="reference" />
+        <attr name="video" format="reference" />
+        <attr name="directory" format="reference" />
+    </declare-styleable>
+
+</resources>

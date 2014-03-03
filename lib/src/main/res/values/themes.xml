@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ThemeFileSelector" parent="android:Theme.Holo">
+        <item name="thumbnailIconStyle">@style/FSThumbnailIconsDark</item>
+        <item name="actionBarAddIcon">@drawable/ic_menu_new_folder_dark</item>
+        <item name="actionBarAcceptIcon">@drawable/ic_menu_accept_dark</item>
+        <item name="showAsDialog">false</item>
+    </style>
+
+    <style name="ThemeFileSelector.Light" parent="android:Theme.Holo.Light">
+        <item name="thumbnailIconStyle">@style/FSThumbnailIconsLight</item>
+        <item name="actionBarAddIcon">@drawable/ic_menu_new_folder_light</item>
+        <item name="actionBarAcceptIcon">@drawable/ic_menu_accept_light</item>
+        <item name="showAsDialog">false</item>
+    </style>
+
+    <style name="ThemeFileSelector.Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="thumbnailIconStyle">@style/FSThumbnailIconsDark</item>
+        <item name="actionBarAddIcon">@drawable/ic_menu_new_folder_dark</item>
+        <item name="actionBarAcceptIcon">@drawable/ic_menu_accept_dark</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="showAsDialog">true</item>
+        <item name="colorDialogBackground">@color/dialog_background_dark</item>
+        <item name="android:actionBarStyle">@style/FSDialogActionBar</item>
+        <item name="android:actionBarSize">@dimen/alert_dialog_title_height</item>
+    </style>
+
+    <style name="ThemeFileSelector.Light.Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="thumbnailIconStyle">@style/FSThumbnailIconsLight</item>
+        <item name="actionBarAddIcon">@drawable/ic_menu_new_folder_light</item>
+        <item name="actionBarAcceptIcon">@drawable/ic_menu_accept_light</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="showAsDialog">true</item>
+        <item name="colorDialogBackground">@color/dialog_background_light</item>
+        <item name="android:actionBarStyle">@style/FSDialogActionBar</item>
+        <item name="android:actionBarSize">@dimen/alert_dialog_title_height</item>
+    </style>
+
+</resources>

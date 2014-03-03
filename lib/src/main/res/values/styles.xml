@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FSThumbnailIconsDark">
+        <item name="apk">@drawable/ic_doc_apk_dark</item>
+        <item name="audio">@drawable/ic_doc_audio_dark</item>
+        <item name="certificate">@drawable/ic_doc_certificate_dark</item>
+        <item name="code">@drawable/ic_doc_code_dark</item>
+        <item name="compressed">@drawable/ic_doc_compressed_dark</item>
+        <item name="contact">@drawable/ic_doc_contact_dark</item>
+        <item name="event">@drawable/ic_doc_event_dark</item>
+        <item name="font">@drawable/ic_doc_font_dark</item>
+        <item name="generic">@drawable/ic_doc_generic_dark</item>
+        <item name="image">@drawable/ic_doc_image_dark</item>
+        <item name="pdf">@drawable/ic_doc_pdf_dark</item>
+        <item name="presentation">@drawable/ic_doc_presentation_dark</item>
+        <item name="spreadsheet">@drawable/ic_doc_spreadsheet_dark</item>
+        <item name="text">@drawable/ic_doc_text_dark</item>
+        <item name="video">@drawable/ic_doc_video_dark</item>
+        <item name="directory">@drawable/ic_doc_directory_dark</item>
+    </style>
+
+    <style name="FSThumbnailIconsLight">
+        <item name="apk">@drawable/ic_doc_apk_light</item>
+        <item name="audio">@drawable/ic_doc_audio_light</item>
+        <item name="certificate">@drawable/ic_doc_certificate_light</item>
+        <item name="code">@drawable/ic_doc_code_light</item>
+        <item name="compressed">@drawable/ic_doc_compressed_light</item>
+        <item name="contact">@drawable/ic_doc_contact_light</item>
+        <item name="event">@drawable/ic_doc_event_light</item>
+        <item name="font">@drawable/ic_doc_font_light</item>
+        <item name="generic">@drawable/ic_doc_generic_light</item>
+        <item name="image">@drawable/ic_doc_image_light</item>
+        <item name="pdf">@drawable/ic_doc_pdf_light</item>
+        <item name="presentation">@drawable/ic_doc_presentation_light</item>
+        <item name="spreadsheet">@drawable/ic_doc_spreadsheet_light</item>
+        <item name="text">@drawable/ic_doc_text_light</item>
+        <item name="video">@drawable/ic_doc_video_light</item>
+        <item name="directory">@drawable/ic_doc_directory_light</item>
+    </style>
+
+    <style name="FSDialogActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.DialogWindowTitle</item>
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_background_dark">#282828</color>
+    <color name="dialog_background_light">#f5f5f5</color>
+
+</resources>

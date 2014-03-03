@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_folder"
+        android:icon="?attr/actionBarAddIcon"
+        android:showAsAction="ifRoom"
+        android:title="@string/new_folder_title">
+    </item>
+    <item
+        android:id="@+id/accept"
+        android:icon="?attr/actionBarAcceptIcon"
+        android:showAsAction="always"
+        android:visible="false"
+        android:title="@string/accept">
+    </item>
+
+</menu>

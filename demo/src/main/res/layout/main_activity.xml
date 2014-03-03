@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="HardcodedText" >
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Style" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/themeActivity"
+                android:layout_width="@dimen/radiobutton_width"
+                android:layout_height="@dimen/min_touch_size"
+                android:text="Activity" />
+
+            <RadioButton
+                android:id="@+id/themeDialog"
+                android:layout_width="@dimen/radiobutton_width"
+                android:checked="true"
+                android:layout_height="@dimen/min_touch_size"
+                android:text="Dialog" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/themeLight"
+                android:layout_width="@dimen/radiobutton_width"
+                android:layout_height="@dimen/min_touch_size"
+                android:checked="true"
+                android:text="Light" />
+
+            <RadioButton
+                android:id="@+id/themeDark"
+                android:layout_width="@dimen/radiobutton_width"
+                android:layout_height="@dimen/min_touch_size"
+                android:text="Dark" />
+        </RadioGroup>
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Directory" />
+
+        <EditText
+            android:id="@+id/initialDirectory"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="@dimen/min_touch_size"
+            android:hint="Initial Directory" />
+
+        <CheckBox
+            android:id="@+id/allowUpNavigationAboveInitial"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/min_touch_size"
+            android:text="Allow navigation above here" />
+
+        <TextView
+            android:id="@+id/configurationTitle"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selection preferences" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/selectionTypeFile"
+                android:layout_width="@dimen/radiobutton_width"
+                android:layout_height="@dimen/min_touch_size"
+                android:checked="true"
+                android:text="File" />
+
+            <RadioButton
+                android:id="@+id/selectionTypeDirectory"
+                android:layout_width="@dimen/radiobutton_width"
+                android:layout_height="@dimen/min_touch_size"
+                android:text="Directory" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/showFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/min_touch_size"
+            android:checked="true"
+            android:enabled="false"
+            android:text="Show files" />
+
+        <CheckBox
+            android:id="@+id/showHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/min_touch_size"
+            android:text="Show hidden items" />
+
+        <Button
+            android:id="@+id/createButton"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Create" >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

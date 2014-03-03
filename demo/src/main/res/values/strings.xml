@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FileSelector Demo</string>
+    <string name="choose_an_item">Select a file</string>
+
+</resources>

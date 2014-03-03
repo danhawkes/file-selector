@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.arcs.android.fileselector.demo"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+        <activity
+            android:name="MainActivity"
+            android:windowSoftInputMode="stateUnchanged" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ThemedActivities$Light"
+            android:label="@string/choose_an_item"
+            android:theme="@style/ThemeFileSelector.Light" >
+        </activity>
+        <activity
+            android:name=".ThemedActivities$Dark"
+            android:label="@string/choose_an_item"
+            android:theme="@style/ThemeFileSelector" >
+        </activity>
+        <activity
+            android:name=".ThemedActivities$LightDialog"
+            android:label="@string/choose_an_item"
+            android:theme="@style/ThemeFileSelector.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".ThemedActivities$DarkDialog"
+            android:label="@string/choose_an_item"
+            android:theme="@style/ThemeFileSelector.Dialog" >
+        </activity>
+    </application>
+
+</manifest>
