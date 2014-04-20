@@ -3,11 +3,10 @@
 ext {
     VERSION_NAME = '1.0.0'
     VERSION_CODE = 1
-    IS_RELEASE_BUILD = false
 }
 
-if (hasProperty("release")) {
-    IS_RELEASE_BUILD = true
+def isReleaseBuild() {
+    return version.contains("SNAPSHOT") == false
 }
 
 buildscript {

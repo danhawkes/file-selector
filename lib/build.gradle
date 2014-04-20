@@ -1,6 +1,4 @@
 apply plugin: 'android-library'
-apply plugin: 'maven'
-apply plugin: 'signing'
 
 android {
     compileSdkVersion 19
@@ -20,70 +18,5 @@ android {
     }
 }
 
-afterEvaluate { project ->
-    uploadArchives {
-        repositories {
-            mavenDeployer {
-                beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+apply from: './deploy.gradle'
 
-                repository(url: mavenRepoUrl) {
-                    authentication(userName: mavenRepoUsername, password: mavenRepoPassword)
-                }
-
-                pom.project {
-                    name 'file-selector'
-                    packaging 'aar'
-                    artifactId = 'file-selector'
-                    groupId "co.arcs.android"
-                    version VERSION_NAME
-                    url 'https://github.com/danhawkes/file-selector'
-
-                    scm {
-                        url 'scm:git:git://github.com/danhawkes/file-selector'
-                        connection 'scm:git:https://github.com/danhawkes/file-selector.git'
-                    }
-
-                    licenses {
-                        license {
-                            name 'The Apache Software License, Version 2.0'
-                            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                            distribution 'repo'
-                        }
-                    }
-
-                    developers {
-                        developer {
-                            id 'dan@arcs.co'
-                            name 'Daniel Hawkes'
-                            url "https://arcs.co"
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    signing {
-        required { IS_RELEASE_BUILD && gradle.taskGraph.hasTask("uploadArchives") }
-        sign configurations.archives
-    }
-
-    task androidJavadocs(type: Javadoc) {
-        source = android.sourceSets.main.allJava
-    }
-
-    task androidJavadocsJar(type: Jar) {
-        classifier = 'javadoc'
-        from androidJavadocs.destinationDir
-    }
-
-    task androidSourcesJar(type: Jar) {
-        classifier = 'sources'
-        from android.sourceSets.main.allSource
-    }
-
-    artifacts {
-        archives androidSourcesJar
-        archives androidJavadocsJar
-    }
-}
