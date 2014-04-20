@@ -11,12 +11,14 @@ afterEvaluate { project ->
                     authentication(userName: mavenRepoUsername, password: mavenRepoPassword)
                 }
 
+                println 'version = ' + version
+
                 pom.project {
                     name 'file-selector'
                     packaging 'aar'
                     artifactId = 'file-selector'
                     groupId "co.arcs.android"
-                    version VERSION_NAME
+                    version version
                     url 'https://github.com/danhawkes/file-selector'
 
                     scm {
@@ -41,6 +43,12 @@ afterEvaluate { project ->
                     }
                 }
             }
+        }
+    }
+
+    configurations {
+        archives {
+            extendsFrom configurations.default
         }
     }
 
