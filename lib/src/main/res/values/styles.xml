@@ -41,7 +41,8 @@
 
     <style name="FSDialogActionBar" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:displayOptions">showTitle</item>
-        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.DialogWindowTitle</item>
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.DialogWindowTitle
+        </item>
     </style>
 
 </resources>

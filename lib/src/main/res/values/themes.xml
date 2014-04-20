@@ -28,6 +28,10 @@
         <item name="colorDialogBackground">@color/dialog_background_dark</item>
         <item name="android:actionBarStyle">@style/FSDialogActionBar</item>
         <item name="android:actionBarSize">@dimen/alert_dialog_title_height</item>
+        <item name="dialogWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="dialogWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="dialogHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="dialogHeightMinor">@dimen/dialog_fixed_height_minor</item>
     </style>
 
     <style name="ThemeFileSelector.Light.Dialog" parent="android:Theme.Holo.Light.Dialog">
@@ -43,6 +47,10 @@
         <item name="colorDialogBackground">@color/dialog_background_light</item>
         <item name="android:actionBarStyle">@style/FSDialogActionBar</item>
         <item name="android:actionBarSize">@dimen/alert_dialog_title_height</item>
+        <item name="dialogWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="dialogWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="dialogHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="dialogHeightMinor">@dimen/dialog_fixed_height_minor</item>
     </style>
 
 </resources>
