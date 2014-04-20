@@ -1,15 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.arcs.android.fileselector"
-    android:versionCode="1"
-    android:versionName="1.0.0" >
-
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+          package="co.arcs.android.fileselector">
 
     <!-- Required by FileSelector to read external storage. -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-    <application />
+    <application android:allowBackup="true"/>
 
 </manifest>

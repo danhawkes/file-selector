@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FileSelector</string>
-
     <!-- Add new folder button and dialogs -->
     <string name="new_folder_hint">Folder name</string>
     <string name="new_folder_success">Folder created</string>

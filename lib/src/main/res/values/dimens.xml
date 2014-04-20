@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <fraction name="dialog_height">65%</fraction>
-    <dimen name="dialog_width">?android:attr/windowMinWidthMinor</dimen>
     <dimen name="alert_dialog_title_height">64dp</dimen>
 
     <item type="dimen" name="dialog_fixed_width_major">320dp</item>
