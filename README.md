@@ -14,19 +14,10 @@
 
 ### With Gradle:
 
-```groovy
-compile 'co.arcs.android:file-selector:1.0.1@aar'
-```
-
-This isn't on maven central (yet), so you'll also need to add the repository:
+Find the latest version on [maven central](http://search.maven.org/#search|ga|1|g%3A%22co.arcs.android%22%20AND%20a%3A%22file-selector%22).
 
 ```groovy
-repositories {
-    mavenCentral( 
-    maven {
-        url "https://arcs.co/archiva/repository/external/"
-    }
-}
+compile 'co.arcs.android:file-selector:1.0.2@aar'
 ```
 
 ### With Eclipse:
